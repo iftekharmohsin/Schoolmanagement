@@ -1,4 +1,0 @@
- mvn archetype:generate -DgroupId=com.frozan 
-	-DartifactId=Schoolmanagement 
-	-DarchetypeArtifactId=maven-archetype-webapp 
-	-DinteractiveMode=false
