@@ -7,7 +7,7 @@
 
 <welcome-file-list>
 		
-<welcome-file>learn-web/web/index.html</welcome-file> 
+<welcome-file>learn-web/web/learn.html</welcome-file> 
 </welcome-file-list>
 
 </web-app>
