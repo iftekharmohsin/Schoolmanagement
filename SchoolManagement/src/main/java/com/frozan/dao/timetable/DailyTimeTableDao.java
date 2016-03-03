@@ -20,8 +20,9 @@ public class DailyTimeTableDao {
 	}
 
 	public List<DailyTimeTable> getTimeTable(String classId){
+		private final String DAYTIEMTABLE="from DailyTimeTableHlo where classId=? AND DAY=?"
 		List<DailyTimeTable> dailyTimeTablesList=null;
-		dailyTimeTablesList=hibernateTemplate.find("from DailyTimeTableHlo where classId=?",new Object[]{classId});
+		dailyTimeTablesList=hibernateTemplate.find(DAYTIEMTABLE,new Object[]{classId,dayId});
 		
 		return dailyTimeTablesList;
 	}
