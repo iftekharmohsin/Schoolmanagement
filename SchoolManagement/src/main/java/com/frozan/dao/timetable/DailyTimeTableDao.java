@@ -19,8 +19,8 @@ public class DailyTimeTableDao {
 		hibernateTemplate.save(dailyTimeTableHlo);
 	}
 
-	public List<DailyTimeTable> getTimeTable(String classId){
-		private final String DAYTIEMTABLE="from DailyTimeTableHlo where classId=? AND DAY=?"
+	public List<DailyTimeTable> getTimeTable(String classId,String dayId){
+		private final String DAYTIEMTABLE="from DailyTimeTableHlo where classId=? AND DAY=?";   
 		List<DailyTimeTable> dailyTimeTablesList=null;
 		dailyTimeTablesList=hibernateTemplate.find(DAYTIEMTABLE,new Object[]{classId,dayId});
 		
